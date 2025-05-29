@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LineaDeg</title>
+  </head>
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .line {
+      width: 400px;
+      height: 20px;
+      border-radius: 10px;
+      box-sizing: 0px 0px 15px #f357ff, 0px 0px 40px #f357ff;
+      animation: animate 3s linear infinite;
+      background: linear-gradient(to right, #ff2b2f, #6ae16a, #76d4e2);
+    }
+    .Arc {
+      position: fixed;
+      height: 20px;
+      text-align: center;
+    }
+    @keyframes animate {
+      0% {
+        filter: hue-rotate(0deg);
+      }
+      100% {
+        filter: hue-rotate(360deg);
+      }
+    }
+  </style>
+
+  <body bgcolor="black">
+    <div class="line"></div>
+    <div class="Arc">
+      <h1 style="color: white">Cargando</h1>
+    </div>
+  </body>
+</html>
